@@ -1,0 +1,10 @@
+.env
+.venv/
+.index/
+command
+movie1.jpg
+movie2.jpg
+.index/
+.index/movies.index_256_64/
+.index/movies.index_256_64/index.faiss
+.index/movies.index_256_64/index.pkl
