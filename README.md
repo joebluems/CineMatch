@@ -13,7 +13,7 @@ Based on a signal from the user (which can be direct or indirect) an LLM creates
 ## System Requirements
 - Open AI key and active LLM & Embedding deployments
 - Weather API key for the external signal source
-- FAISS as vector storage and retrieval
+- FAISS for vector storage and retrieval (need reasonable storage space and memory available)
 - Streamlit runs the app
 
 ## Installation
@@ -28,6 +28,12 @@ copy the env.example file and fill in your endpoints and API key
 ```
 cp .env.example .env
 replace the api, endpoint and model names as needed
+```
+
+create the index using the plots file provided. This may take up to 30 minutes.
+```
+mkdir .index
+python faiss.py
 ```
 
 run the application
